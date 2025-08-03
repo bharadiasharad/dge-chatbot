@@ -54,7 +54,19 @@ export class RagController {
 
   @Post('query')
   @ApiOperation({ summary: 'Query documents with RAG' })
-  @ApiBody({ type: RagQueryDto })
+  @ApiBody({
+    schema: {
+      type: 'object',
+      properties: {
+        query: {
+          type: 'string',
+          example: 'machine learning algorithms',
+          description: 'Query to search documents'
+        }
+      },
+      required: ['query']
+    }
+  })
   @ApiResponse({ status: 200, description: 'Query response generated' })
   async query(@Body() body: RagQueryDto) {
     return this.ragService.queryDocuments(body.query);
