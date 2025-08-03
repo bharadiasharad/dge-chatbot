@@ -34,7 +34,19 @@ export class RagController {
 
   @Post('chat')
   @ApiOperation({ summary: 'Chat with RAG system' })
-  @ApiBody({ type: RagChatDto })
+  @ApiBody({
+    schema: {
+      type: 'object',
+      properties: {
+        message: {
+          type: 'string',
+          example: 'What is artificial intelligence?',
+          description: 'Message to send to RAG system'
+        }
+      },
+      required: ['message']
+    }
+  })
   @ApiResponse({ status: 200, description: 'RAG response generated' })
   async chatWithDocuments(@Body() body: RagChatDto) {
     return this.ragService.chatWithDocuments(body.message);
