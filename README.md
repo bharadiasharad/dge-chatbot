@@ -163,11 +163,59 @@ The application supports extensive configuration through environment variables. 
 
 ## 🧪 Testing
 
-### Run the test script:
+### Automated Testing Scripts
+
+We provide several testing scripts to verify API functionality:
+
+#### 1. Simple API Test (Recommended for quick verification)
 ```bash
+# Make script executable
+chmod +x scripts/simple-test.sh
+
+# Run the simple test
+./scripts/simple-test.sh
+```
+
+This script tests:
+- ✅ Health check endpoints
+- ✅ User authentication (login)
+- ✅ Session creation and management
+- ✅ Chat functionality
+- ✅ RAG integration
+- ✅ Session deletion
+
+#### 2. Comprehensive API Test (Full endpoint coverage)
+```bash
+# Make script executable
+chmod +x scripts/test-apis.sh
+
+# Run comprehensive test
+./scripts/test-apis.sh
+```
+
+This script tests all endpoints including:
+- ✅ Health checks
+- ✅ Authentication (register, login, refresh)
+- ✅ Session management (CRUD operations)
+- ✅ Message handling
+- ✅ RAG functionality (chat, query)
+- ✅ Error handling
+- ✅ Security validation
+
+#### 3. RAG Functionality Test
+```bash
+# Make script executable
 chmod +x test-rag-functionality.sh
+
+# Run RAG-specific tests
 ./test-rag-functionality.sh
 ```
+
+This script focuses on RAG features:
+- ✅ Document upload and processing
+- ✅ Vector search functionality
+- ✅ RAG chat responses
+- ✅ Document querying
 
 ### Manual Testing
 
@@ -195,6 +243,73 @@ chmod +x test-rag-functionality.sh
      -H "Content-Type: application/json" \
      -d '{"message": "What can you tell me about the documents?"}'
    ```
+
+### Testing Prerequisites
+
+Before running tests, ensure:
+
+1. **All services are running:**
+   ```bash
+   docker-compose up -d
+   ```
+
+2. **Required tools are installed:**
+   ```bash
+   # Check if jq is installed (for JSON parsing)
+   which jq
+   
+   # Check if curl is installed
+   which curl
+   ```
+
+3. **API is accessible:**
+   ```bash
+   curl -s http://localhost:8000/api/v1/health/live
+   ```
+
+### Troubleshooting Tests
+
+#### Common Issues:
+
+1. **"API key is required" error:**
+   - Ensure the API key in the test scripts matches your `.env` file
+   - Default key: `your-super-secret-api-key-change-this-in-production`
+
+2. **"Connection refused" error:**
+   - Check if Docker services are running: `docker-compose ps`
+   - Restart services: `docker-compose restart`
+
+3. **"JWT token invalid" error:**
+   - The test scripts automatically handle JWT token extraction
+   - If manual testing, get a fresh token via login endpoint
+
+4. **"Ollama model not found" error:**
+   - Pull the required model: `docker-compose exec ollama ollama pull phi3:mini`
+
+#### Test Script Output:
+
+- ✅ **Green checkmarks** indicate successful tests
+- ❌ **Red X marks** indicate failed tests
+- 📊 **Summary** shows total tests passed/failed
+
+### E2E Testing
+
+For end-to-end testing with the frontend:
+
+1. **Start both backend and frontend:**
+   ```bash
+   # Backend
+   docker-compose up -d
+   
+   # Frontend (in assignment-ui directory)
+   cd ../assignment-ui
+   docker-compose up -d
+   ```
+
+2. **Access the application:**
+   - Frontend: http://localhost:3001
+   - Backend API: http://localhost:8000
+   - Swagger Docs: http://localhost:8000/api/docs
 
 ## 🔧 Development
 

@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { WinstonModule } from 'nest-winston';
+import * as winston from 'winston';
 
 import { AuthModule } from './modules/auth/auth.module';
 import { SessionsModule } from './modules/sessions/sessions.module';
@@ -53,20 +54,20 @@ import { ollamaConfig } from './config/ollama.config';
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => ({
         level: configService.get('app.logLevel'),
-        format: require('winston').format.combine(
-          require('winston').format.timestamp(),
-          require('winston').format.errors({ stack: true }),
-          require('winston').format.json()
+        format: winston.format.combine(
+          winston.format.timestamp(),
+          winston.format.errors({ stack: true }),
+          winston.format.json()
         ),
         transports: [
-          new require('winston').transports.Console(),
-          new require('winston').transports.File({
+          new winston.transports.Console(),
+          new winston.transports.File({
             filename: configService.get('app.logFilePath') + '/error.log',
             level: 'error',
             maxsize: configService.get('app.logMaxSize'),
             maxFiles: configService.get('app.logMaxFiles'),
           }),
-          new require('winston').transports.File({
+          new winston.transports.File({
             filename: configService.get('app.logFilePath') + '/combined.log',
             maxsize: configService.get('app.logMaxSize'),
             maxFiles: configService.get('app.logMaxFiles'),
@@ -80,8 +81,12 @@ import { ollamaConfig } from './config/ollama.config';
     ThrottlerModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => ({
-        ttl: configService.get('app.rateLimitTtl'),
-        limit: configService.get('app.rateLimitMax'),
+        throttlers: [
+          {
+            ttl: configService.get('app.rateLimitTtl'),
+            limit: configService.get('app.rateLimitMax'),
+          },
+        ],
       }),
       inject: [ConfigService],
     }),
