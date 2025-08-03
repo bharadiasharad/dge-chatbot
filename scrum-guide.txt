@@ -1,0 +1,471 @@
+Ken Schwaber & Jeff Sutherland
+The Scrum Guide
+The Definitive Guide to Scrum: The Rules of the Game
+November 2020
+1
+Purpose of the Scrum Guide
+We developed Scrum in the early 1990s. We wrote the first version of the Scrum Guide in 2010 to help
+people worldwide understand Scrum. We have evolved the Guide since then through small, functional
+updates. Together, we stand behind it.
+The Scrum Guide contains the definition of Scrum. Each element of the framework serves a specific
+purpose that is essential to the overall value and results realized with Scrum. Changing the core design
+or ideas of Scrum, leaving out elements, or not following the rules of Scrum, covers up problems and
+limits the benefits of Scrum, potentially even rendering it useless.
+We follow the growing use of Scrum within an ever-growing complex world. We are humbled to see
+Scrum being adopted in many domains holding essentially complex work, beyond software product
+development where Scrum has its roots. As Scrum’s use spreads, developers, researchers, analysts,
+scientists, and other specialists do the work. We use the word “developers” in Scrum not to exclude,
+but to simplify. If you get value from Scrum, consider yourself included.
+As Scrum is being used, patterns, processes, and insights that fit the Scrum framework as described in
+this document, may be found, applied and devised. Their description is beyond the purpose of the
+Scrum Guide because they are context sensitive and differ widely between Scrum uses. Such tactics for
+using within the Scrum framework vary widely and are described elsewhere.
+Ken Schwaber & Jeff Sutherland November 2020
+© 2020 Ken Schwaber and Jeff Sutherland
+This publication is offered for license under the Attribution Share-Alike license of Creative Commons,
+accessible at https://creativecommons.org/licenses/by-sa/4.0/legalcode and also described in summary
+form at https://creativecommons.org/licenses/by-sa/4.0/. By utilizing this Scrum Guide, you
+acknowledge and agree that you have read and agree to be bound by the terms of the Attribution
+Share-Alike license of Creative Commons.
+2
+Purpose of the Scrum Guide..........................................................................................................................1
+Scrum Definition ............................................................................................................................................3
+Scrum Theory .................................................................................................................................................3
+Transparency .............................................................................................................................................3
+Inspection ..................................................................................................................................................4
+Adaptation .................................................................................................................................................4
+Scrum Values .................................................................................................................................................4
+Scrum Team ...................................................................................................................................................5
+Developers.................................................................................................................................................5
+Product Owner...........................................................................................................................................5
+Scrum Master.............................................................................................................................................6
+Scrum Events .................................................................................................................................................7
+The Sprint...................................................................................................................................................7
+Sprint Planning...........................................................................................................................................8
+Daily Scrum ................................................................................................................................................9
+Sprint Review.............................................................................................................................................9
+Sprint Retrospective ................................................................................................................................10
+Scrum Artifacts.............................................................................................................................................10
+Product Backlog .......................................................................................................................................10
+Commitment: Product Goal.................................................................................................................11
+Sprint Backlog ..........................................................................................................................................11
+Commitment: Sprint Goal....................................................................................................................11
+Increment.................................................................................................................................................11
+Commitment: Definition of Done ........................................................................................................12
+End Note ......................................................................................................................................................13
+Acknowledgements .................................................................................................................................13
+People ..................................................................................................................................................13
+Scrum Guide History ............................................................................................................................13
+3
+Scrum Definition
+Scrum is a lightweight framework that helps people, teams and organizations generate value through
+adaptive solutions for complex problems.
+In a nutshell, Scrum requires a Scrum Master to foster an environment where:
+1. A Product Owner orders the work for a complex problem into a Product Backlog.
+2. The Scrum Team turns a selection of the work into an Increment of value during a Sprint.
+3. The Scrum Team and its stakeholders inspect the results and adjust for the next Sprint.
+4. Repeat
+Scrum is simple. Try it as is and determine if its philosophy, theory, and structure help to achieve goals
+and create value. The Scrum framework is purposefully incomplete, only defining the parts required to
+implement Scrum theory. Scrum is built upon by the collective intelligence of the people using it. Rather
+than provide people with detailed instructions, the rules of Scrum guide their relationships and
+interactions.
+Various processes, techniques and methods can be employed within the framework. Scrum wraps
+around existing practices or renders them unnecessary. Scrum makes visible the relative efficacy of
+current management, environment, and work techniques, so that improvements can be made.
+Scrum Theory
+Scrum is founded on empiricism and lean thinking. Empiricism asserts that knowledge comes from
+experience and making decisions based on what is observed. Lean thinking reduces waste and focuses
+on the essentials.
+Scrum employs an iterative, incremental approach to optimize predictability and to control risk. Scrum
+engages groups of people who collectively have all the skills and expertise to do the work and share or
+acquire such skills as needed.
+Scrum combines four formal events for inspection and adaptation within a containing event, the Sprint.
+These events work because they implement the empirical Scrum pillars of transparency, inspection, and
+adaptation.
+Transparency
+The emergent process and work must be visible to those performing the work as well as those receiving
+the work. With Scrum, important decisions are based on the perceived state of its three formal artifacts.
+Artifacts that have low transparency can lead to decisions that diminish value and increase risk.
+4
+Transparency enables inspection. Inspection without transparency is misleading and wasteful.
+Inspection
+The Scrum artifacts and the progress toward agreed goals must be inspected frequently and diligently to
+detect potentially undesirable variances or problems. To help with inspection, Scrum provides cadence
+in the form of its five events.
+Inspection enables adaptation. Inspection without adaptation is considered pointless. Scrum events are
+designed to provoke change.
+Adaptation
+If any aspects of a process deviate outside acceptable limits or if the resulting product is unacceptable,
+the process being applied or the materials being produced must be adjusted. The adjustment must be
+made as soon as possible to minimize further deviation.
+Adaptation becomes more difficult when the people involved are not empowered or self-managing. A
+Scrum Team is expected to adapt the moment it learns anything new through inspection.
+Scrum Values
+Successful use of Scrum depends on people becoming more proficient in living five values:
+Commitment, Focus, Openness, Respect, and Courage
+The Scrum Team commits to achieving its goals and to supporting each other. Their primary focus is on
+the work of the Sprint to make the best possible progress toward these goals. The Scrum Team and its
+stakeholders are open about the work and the challenges. Scrum Team members respect each other to
+be capable, independent people, and are respected as such by the people with whom they work. The
+Scrum Team members have the courage to do the right thing, to work on tough problems.
+These values give direction to the Scrum Team with regard to their work, actions, and behavior. The
+decisions that are made, the steps taken, and the way Scrum is used should reinforce these values, not
+diminish or undermine them. The Scrum Team members learn and explore the values as they work with
+the Scrum events and artifacts. When these values are embodied by the Scrum Team and the people
+they work with, the empirical Scrum pillars of transparency, inspection, and adaptation come to life
+building trust.
+5
+Scrum Team
+The fundamental unit of Scrum is a small team of people, a Scrum Team. The Scrum Team consists of
+one Scrum Master, one Product Owner, and Developers. Within a Scrum Team, there are no sub-teams
+or hierarchies. It is a cohesive unit of professionals focused on one objective at a time, the Product Goal.
+Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value
+each Sprint. They are also self-managing, meaning they internally decide who does what, when, and
+how.
+The Scrum Team is small enough to remain nimble and large enough to complete significant work within
+a Sprint, typically 10 or fewer people. In general, we have found that smaller teams communicate better
+and are more productive. If Scrum Teams become too large, they should consider reorganizing into
+multiple cohesive Scrum Teams, each focused on the same product. Therefore, they should share the
+same Product Goal, Product Backlog, and Product Owner.
+The Scrum Team is responsible for all product-related activities from stakeholder collaboration,
+verification, maintenance, operation, experimentation, research and development, and anything else
+that might be required. They are structured and empowered by the organization to manage their own
+work. Working in Sprints at a sustainable pace improves the Scrum Team’s focus and consistency.
+The entire Scrum Team is accountable for creating a valuable, useful Increment every Sprint. Scrum
+defines three specific accountabilities within the Scrum Team: the Developers, the Product Owner, and
+the Scrum Master.
+Developers
+Developers are the people in the Scrum Team that are committed to creating any aspect of a usable
+Increment each Sprint.
+The specific skills needed by the Developers are often broad and will vary with the domain of work.
+However, the Developers are always accountable for:
+● Creating a plan for the Sprint, the Sprint Backlog;
+● Instilling quality by adhering to a Definition of Done;
+● Adapting their plan each day toward the Sprint Goal; and,
+● Holding each other accountable as professionals.
+Product Owner
+The Product Owner is accountable for maximizing the value of the product resulting from the work of
+the Scrum Team. How this is done may vary widely across organizations, Scrum Teams, and individuals.
+6
+The Product Owner is also accountable for effective Product Backlog management, which includes:
+● Developing and explicitly communicating the Product Goal;
+● Creating and clearly communicating Product Backlog items;
+● Ordering Product Backlog items; and,
+● Ensuring that the Product Backlog is transparent, visible and understood.
+The Product Owner may do the above work or may delegate the responsibility to others. Regardless, the
+Product Owner remains accountable.
+For Product Owners to succeed, the entire organization must respect their decisions. These decisions
+are visible in the content and ordering of the Product Backlog, and through the inspectable Increment at
+the Sprint Review.
+The Product Owner is one person, not a committee. The Product Owner may represent the needs of
+many stakeholders in the Product Backlog. Those wanting to change the Product Backlog can do so by
+trying to convince the Product Owner.
+Scrum Master
+The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide. They do this by
+helping everyone understand Scrum theory and practice, both within the Scrum Team and the
+organization.
+The Scrum Master is accountable for the Scrum Team’s effectiveness. They do this by enabling the
+Scrum Team to improve its practices, within the Scrum framework.
+Scrum Masters are true leaders who serve the Scrum Team and the larger organization.
+The Scrum Master serves the Scrum Team in several ways, including:
+● Coaching the team members in self-management and cross-functionality;
+● Helping the Scrum Team focus on creating high-value Increments that meet the Definition of
+Done;
+● Causing the removal of impediments to the Scrum Team’s progress; and,
+● Ensuring that all Scrum events take place and are positive, productive, and kept within the
+timebox.
+The Scrum Master serves the Product Owner in several ways, including:
+7
+● Helping find techniques for effective Product Goal definition and Product Backlog management;
+● Helping the Scrum Team understand the need for clear and concise Product Backlog items;
+● Helping establish empirical product planning for a complex environment; and,
+● Facilitating stakeholder collaboration as requested or needed.
+The Scrum Master serves the organization in several ways, including:
+● Leading, training, and coaching the organization in its Scrum adoption;
+● Planning and advising Scrum implementations within the organization;
+● Helping employees and stakeholders understand and enact an empirical approach for complex
+work; and,
+● Removing barriers between stakeholders and Scrum Teams.
+Scrum Events
+The Sprint is a container for all other events. Each event in Scrum is a formal opportunity to inspect and
+adapt Scrum artifacts. These events are specifically designed to enable the transparency required.
+Failure to operate any events as prescribed results in lost opportunities to inspect and adapt. Events are
+used in Scrum to create regularity and to minimize the need for meetings not defined in Scrum.
+Optimally, all events are held at the same time and place to reduce complexity.
+The Sprint
+Sprints are the heartbeat of Scrum, where ideas are turned into value.
+They are fixed length events of one month or less to create consistency. A new Sprint starts immediately
+after the conclusion of the previous Sprint.
+All the work necessary to achieve the Product Goal, including Sprint Planning, Daily Scrums, Sprint
+Review, and Sprint Retrospective, happen within Sprints.
+During the Sprint:
+● No changes are made that would endanger the Sprint Goal;
+● Quality does not decrease;
+● The Product Backlog is refined as needed; and,
+● Scope may be clarified and renegotiated with the Product Owner as more is learned.
+Sprints enable predictability by ensuring inspection and adaptation of progress toward a Product Goal at
+least every calendar month. When a Sprint’s horizon is too long the Sprint Goal may become invalid,
+complexity may rise, and risk may increase. Shorter Sprints can be employed to generate more learning 
+8
+cycles and limit risk of cost and effort to a smaller time frame. Each Sprint may be considered a short
+project.
+Various practices exist to forecast progress, like burn-downs, burn-ups, or cumulative flows. While
+proven useful, these do not replace the importance of empiricism. In complex environments, what will
+happen is unknown. Only what has already happened may be used for forward-looking decision making.
+A Sprint could be cancelled if the Sprint Goal becomes obsolete. Only the Product Owner has the
+authority to cancel the Sprint.
+Sprint Planning
+Sprint Planning initiates the Sprint by laying out the work to be performed for the Sprint. This resulting
+plan is created by the collaborative work of the entire Scrum Team.
+The Product Owner ensures that attendees are prepared to discuss the most important Product Backlog
+items and how they map to the Product Goal. The Scrum Team may also invite other people to attend
+Sprint Planning to provide advice.
+Sprint Planning addresses the following topics:
+Topic One: Why is this Sprint valuable?
+The Product Owner proposes how the product could increase its value and utility in the current Sprint.
+The whole Scrum Team then collaborates to define a Sprint Goal that communicates why the Sprint is
+valuable to stakeholders. The Sprint Goal must be finalized prior to the end of Sprint Planning.
+Topic Two: What can be Done this Sprint?
+Through discussion with the Product Owner, the Developers select items from the Product Backlog to
+include in the current Sprint. The Scrum Team may refine these items during this process, which
+increases understanding and confidence.
+Selecting how much can be completed within a Sprint may be challenging. However, the more the
+Developers know about their past performance, their upcoming capacity, and their Definition of Done,
+the more confident they will be in their Sprint forecasts.
+Topic Three: How will the chosen work get done?
+For each selected Product Backlog item, the Developers plan the work necessary to create an Increment
+that meets the Definition of Done. This is often done by decomposing Product Backlog items into
+smaller work items of one day or less. How this is done is at the sole discretion of the Developers. No
+one else tells them how to turn Product Backlog items into Increments of value.
+9
+The Sprint Goal, the Product Backlog items selected for the Sprint, plus the plan for delivering them are
+together referred to as the Sprint Backlog.
+Sprint Planning is timeboxed to a maximum of eight hours for a one-month Sprint. For shorter Sprints,
+the event is usually shorter.
+Daily Scrum
+The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint
+Backlog as necessary, adjusting the upcoming planned work.
+The Daily Scrum is a 15-minute event for the Developers of the Scrum Team. To reduce complexity, it is
+held at the same time and place every working day of the Sprint. If the Product Owner or Scrum Master
+are actively working on items in the Sprint Backlog, they participate as Developers.
+The Developers can select whatever structure and techniques they want, as long as their Daily Scrum
+focuses on progress toward the Sprint Goal and produces an actionable plan for the next day of work.
+This creates focus and improves self-management.
+Daily Scrums improve communications, identify impediments, promote quick decision-making, and
+consequently eliminate the need for other meetings.
+The Daily Scrum is not the only time Developers are allowed to adjust their plan. They often meet
+throughout the day for more detailed discussions about adapting or re-planning the rest of the Sprint’s
+work.
+Sprint Review
+The purpose of the Sprint Review is to inspect the outcome of the Sprint and determine future
+adaptations. The Scrum Team presents the results of their work to key stakeholders and progress
+toward the Product Goal is discussed.
+During the event, the Scrum Team and stakeholders review what was accomplished in the Sprint and
+what has changed in their environment. Based on this information, attendees collaborate on what to do
+next. The Product Backlog may also be adjusted to meet new opportunities. The Sprint Review is a
+working session and the Scrum Team should avoid limiting it to a presentation.
+The Sprint Review is the second to last event of the Sprint and is timeboxed to a maximum of four hours
+for a one-month Sprint. For shorter Sprints, the event is usually shorter.
+10
+Sprint Retrospective
+The purpose of the Sprint Retrospective is to plan ways to increase quality and effectiveness.
+The Scrum Team inspects how the last Sprint went with regards to individuals, interactions, processes,
+tools, and their Definition of Done. Inspected elements often vary with the domain of work.
+Assumptions that led them astray are identified and their origins explored. The Scrum Team discusses
+what went well during the Sprint, what problems it encountered, and how those problems were (or
+were not) solved.
+The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful
+improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the
+next Sprint.
+The Sprint Retrospective concludes the Sprint. It is timeboxed to a maximum of three hours for a onemonth Sprint. For shorter Sprints, the event is usually shorter.
+Scrum Artifacts
+Scrum’s artifacts represent work or value. They are designed to maximize transparency of key
+information. Thus, everyone inspecting them has the same basis for adaptation.
+Each artifact contains a commitment to ensure it provides information that enhances transparency and
+focus against which progress can be measured:
+● For the Product Backlog it is the Product Goal.
+● For the Sprint Backlog it is the Sprint Goal.
+● For the Increment it is the Definition of Done.
+These commitments exist to reinforce empiricism and the Scrum values for the Scrum Team and their
+stakeholders.
+Product Backlog
+The Product Backlog is an emergent, ordered list of what is needed to improve the product. It is the
+single source of work undertaken by the Scrum Team.
+Product Backlog items that can be Done by the Scrum Team within one Sprint are deemed ready for
+selection in a Sprint Planning event. They usually acquire this degree of transparency after refining
+activities. Product Backlog refinement is the act of breaking down and further defining Product Backlog
+items into smaller more precise items. This is an ongoing activity to add details, such as a description,
+order, and size. Attributes often vary with the domain of work.
+11
+The Developers who will be doing the work are responsible for the sizing. The Product Owner may
+influence the Developers by helping them understand and select trade-offs.
+Commitment: Product Goal
+The Product Goal describes a future state of the product which can serve as a target for the Scrum Team
+to plan against. The Product Goal is in the Product Backlog. The rest of the Product Backlog emerges to
+define “what” will fulfill the Product Goal.
+A product is a vehicle to deliver value. It has a clear boundary, known stakeholders, well-defined
+users or customers. A product could be a service, a physical product, or something more abstract.
+The Product Goal is the long-term objective for the Scrum Team. They must fulfill (or abandon) one
+objective before taking on the next.
+Sprint Backlog
+The Sprint Backlog is composed of the Sprint Goal (why), the set of Product Backlog items selected for
+the Sprint (what), as well as an actionable plan for delivering the Increment (how).
+The Sprint Backlog is a plan by and for the Developers. It is a highly visible, real-time picture of the work
+that the Developers plan to accomplish during the Sprint in order to achieve the Sprint Goal.
+Consequently, the Sprint Backlog is updated throughout the Sprint as more is learned. It should have
+enough detail that they can inspect their progress in the Daily Scrum.
+Commitment: Sprint Goal
+The Sprint Goal is the single objective for the Sprint. Although the Sprint Goal is a commitment by the
+Developers, it provides flexibility in terms of the exact work needed to achieve it. The Sprint Goal also
+creates coherence and focus, encouraging the Scrum Team to work together rather than on separate
+initiatives.
+The Sprint Goal is created during the Sprint Planning event and then added to the Sprint Backlog. As the
+Developers work during the Sprint, they keep the Sprint Goal in mind. If the work turns out to be
+different than they expected, they collaborate with the Product Owner to negotiate the scope of the
+Sprint Backlog within the Sprint without affecting the Sprint Goal.
+Increment
+An Increment is a concrete stepping stone toward the Product Goal. Each Increment is additive to all
+prior Increments and thoroughly verified, ensuring that all Increments work together. In order to
+provide value, the Increment must be usable.
+12
+Multiple Increments may be created within a Sprint. The sum of the Increments is presented at the
+Sprint Review thus supporting empiricism. However, an Increment may be delivered to stakeholders
+prior to the end of the Sprint. The Sprint Review should never be considered a gate to releasing value.
+Work cannot be considered part of an Increment unless it meets the Definition of Done.
+Commitment: Definition of Done
+The Definition of Done is a formal description of the state of the Increment when it meets the quality
+measures required for the product.
+The moment a Product Backlog item meets the Definition of Done, an Increment is born.
+The Definition of Done creates transparency by providing everyone a shared understanding of what
+work was completed as part of the Increment. If a Product Backlog item does not meet the Definition of
+Done, it cannot be released or even presented at the Sprint Review. Instead, it returns to the Product
+Backlog for future consideration.
+If the Definition of Done for an increment is part of the standards of the organization, all Scrum Teams
+must follow it as a minimum. If it is not an organizational standard, the Scrum Team must create a
+Definition of Done appropriate for the product.
+The Developers are required to conform to the Definition of Done. If there are multiple Scrum Teams
+working together on a product, they must mutually define and comply with the same Definition of Done.
+13
+End Note
+Scrum is free and offered in this Guide. The Scrum framework, as outlined herein, is immutable. While
+implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety
+and functions well as a container for other techniques, methodologies, and practices.
+Acknowledgements
+People
+Of the thousands of people who have contributed to Scrum, we should single out those who were
+instrumental at the start: Jeff Sutherland worked with Jeff McKenna and John Scumniotales, and Ken
+Schwaber worked with Mike Smith and Chris Martin, and all of them worked together. Many others
+contributed in the ensuing years and without their help Scrum would not be refined as it is today.
+Scrum Guide History
+Ken Schwaber and Jeff Sutherland first co-presented Scrum at the OOPSLA Conference in 1995. It
+essentially documented the learning that Ken and Jeff gained over the previous few years and made
+public the first formal definition of Scrum.
+The Scrum Guide documents Scrum as developed, evolved, and sustained for 30-plus years by Jeff
+Sutherland and Ken Schwaber. Other sources provide patterns, processes, and insights that complement
+the Scrum framework. These may increase productivity, value, creativity, and satisfaction with the
+results.
+The complete history of Scrum is described elsewhere. To honor the first places where it was tried and
+proven, we recognize Individual Inc., Newspage, Fidelity Investments, and IDX (now GE Medical).
+© 2020 Ken Schwaber and Jeff Sutherland
+This publication is offered for license under the Attribution Share-Alike license of Creative Commons,
+accessible at https://creativecommons.org/licenses/by-sa/4.0/legalcode and also described in summary
+form at https://creativecommons.org/licenses/by-sa/4.0/. By utilizing this Scrum Guide, you
+acknowledge and agree that you have read and agree to be bound by the terms of the Attribution
+Share-Alike license of Creative Commons.
+
+
+FAQS
+
+Our Professional Scrum Trainers have worked to gather many of the questions that are asked by their students, the Scrum.org Forum and other places to provide answers to your Frequently Asked Questions about Scrum. 
+
+How do we handle spill-over between Sprints?
+There is no spill-over (or carry-over) of work from one Sprint to the next in Scrum: the concept does not exist. The right thing to do with unfinished work is for the Developers to re-estimate it on the Product Backlog, and then allow the Product Owner to order it appropriately. Bear in mind that business conditions can change very rapidly.
+How do we do a ticket that’s too big to fit in a Sprint?
+The leap-of-faith represented by that item is too great. Rethink it in terms of the smallest useful experiments which need to be done to validate any assumptions being made about the item’s value.
+Who decides when to release?
+The moment something is Done, an Increment is born and the imperative is to release it. Empiricism should not be put in delay. The Developers on the Scrum Team are accountable for meeting the Definition of Done and thus for ensuring work is of usable quality. A Product Owner can stop an increment from being used if it is inappropriate for current business conditions.
+How do we measure the success of a team?
+A Scrum Team determines its success by providing at least one Done Increment of useful working Product each and every Sprint.
+How do I facilitate a Retrospective?
+Encourage divergence and convergence amongst participants, expect frustration, and help them to navigate it through focus Look for at least one improvement to the team’s implementation of Scrum, preferably for implementation in the next Sprint so adaptation is timely. The right participant to facilitate an Event can be the one who sees it needs doing.
+How do you prepare for a Demo?
+Only work that is Done ought to be shown to stakeholders. The important thing is to then update the Product Backlog with any work that remains to be Done. A Sprint Review may not require a demonstration at all: the Sprint Backlog could be used as a checklist, and the Product Backlog updated.
+What KPIs do we use?
+The primary measure of progress is having Done increments of working product, of which at least one must be produced every Sprint. The Developers on the Scrum Team should monitor their progress towards this, using whatever techniques they deem appropriate. These might include burn-up and burn-down charts and velocity or throughput measures. KPIs for business purposes are suggested and outlined in the Evidence Based Management framework.
+How do we plan ahead when a QA Sprint lags behind a Development Sprint?
+Every Sprint ought to result in at least one Done Increment of immediate usable quality. Focus is needed to ensure that all development work, including quality assurance, is completed each Sprint. Consider reducing work in progress accordingly, and ensure that the Developers have all skills needed to meet the Definition of Done for the Product.
+Who creates the Definition of Done?
+The Scrum Team works to craft a Definition of Done which assures the usable quality of the Product, which the Developers will then be accountable for meeting. Organizational standards may be used used as a starting point for determining the quality needed.
+How do we account for partly completed stories when reporting our velocity?
+Velocity is the rate at which work is Done, not partly done. Any work which is not yet completed ought to be re-estimated by the Developers on the Product Backlog. The Product Owner should then order and organize the work appropriately, taking into account the latest business conditions.
+How do I map story points to hours?
+The only purpose of estimation in Scrum is so the Developers can get their arms around how much work they can do in a Sprint. They will consider not just time, but other factors such as effort and complexity.
+Can we change the Sprint Goal?
+The Sprint Goal is a commitment made by the Developers. They may change the forecast of work on the Sprint Backlog, as more is learned during a Sprint, to ensure it is satisfied. The Sprint Goal cannot change during a Sprint, but if it becomes obsolete the Product Owner may cancel the Sprint itself given that its achievement is no longer valuable.
+Who assigns tasks to the Developers?
+The Developers themselves decide who does what during a Sprint in order to meet their Sprint Goal commitment. They have a formal opportunity each day, in the Daily Scrum, to replan their work on the Sprint Backlog to better meet the Sprint Goal.
+How do we tell management when we will deliver the project?
+The most important project in Scrum is the Sprint, since this allows empiricism to be established and maintained. Other projects may exist, but forecasts for their completion must be evidenced by work completed each Sprint.
+How can story points not relate to time?
+The Developers may estimate work in any way they see fit, as long as it helps them figure out how much work they can take on and complete in a Sprint. As such they may not consider just time, but also complexity, effort, and other factors.
+Who moves tickets to the Sprint Backlog?    
+The Developers manage the Sprint Backlog: it's their forecast of work for meeting the Sprint Goal they've committed to. They may remove, add, or modify this work so the Sprint Goal will be better achieved. They should collaborate with the Product Owner when changing Product Backlog items. No work should ever be planned into the Sprint Backlog which would put either the Sprint Goal or the Definition of Done at risk.
+Can we combine the Sprint Review and the Sprint Retrospective?    
+The Sprint Review and Sprint Retrospective are separate time-boxed events, each with a specific focus. There is no rule against conducting them sequentially. The Sprint Retrospective bookends the Sprint and hence will always be the final activity. Product stakeholders may be invited to the Sprint Review if their input is thought useful, but they would not attend the Scrum Team's Sprint Retrospective.
+What are the inputs and outputs of the Scrum ceremonies?    
+There are no ceremonies in Scrum but there are events, each of which is a formal opportunity to inspect and adapt something. Sprint Planning requires a Product Goal and enough work that is ready to choose from, a Definition of Done, and an understanding of capacity. A Sprint Goal is agreed, along with a forecast of work in the Sprint Backlog for meeting it. In the Daily Scrum the Developers inspects the current state of the Sprint Backlog and their progress to the Sprint Goal, and update their plan for the next working day. The Sprint Review considers the work that has been Done and remains to be Done, and the Product Backlog is then updated. The Sprint Retrospective considers everything to do with the Scrum Team's way-of-working with regards to individuals, interactions, processes, tools, and the Definition of Done, and results in at least one improvement in team effectiveness.
+How do we reopen user stories?    
+Once a Product Backlog item has been Done, it no longer represents work on the Product Backlog. Should any new work be discovered, new Product Backlog items may then be created, refined, and selected in future Sprint Planning events. Remedial work for an Increment of insufficient quality ought to be accounted for on the Product Backlog, and the Definition of Done improved.
+I’m a Product Owner – do I write the user stories?    
+The Product Backlog must always tell the truth about the work that is currently believed to remain for the Product over its lifetime. The Product Owner is accountable for ensuring that the Product Backlog provides this transparency over Product value, but he or she does not have to author, order, or organize any Product Backlog items. The Product Owner may delegate such responsibilities to others if they are agreeable, whether they be Developers, stakeholders or the office cleaner, but the Product Owner would remain accountable for whether or not Product value is then optimized.
+How do I prioritize the Product Backlog    
+A Product Owner will order and organize the Product Backlog taking into account many things, of which priority is just one. Other things they consider include dependencies (business, technical, workflow, human), value, risk, and many other factors. They'll observe the rate at which work is being Done, and use this to inform themselves about how the backlog will be arranged so value delivery is optimized over time, bearing in mind that each Sprint is a learning experiment. A Product Owner can delegate the responsibilities of backlog management to someone else if they are agreeable, but ultimately the Product Owner remains accountable for value delivery outcomes.
+How do we do V-Model testing in Scrum?    
+The entire point of Scrum is to produce a Done and immediately usable Increment at least once every Sprint. The Developers are accountable for ensuring the quality of each Increment. Anyone whose industry is needed for this is a Developer, including those doing testing. If the Developers believe a V Model helps them to assure a Done level of quality, then they may use it each Sprint. On the other hand they may prefer to apply focus and limit their work in progress, so individual items from the Product Backlog are built and tested early and often. This could help them to manage risk more effectively than a V Model approach.
+How do we estimate spikes?    
+The term "spike" usually refers to an investigation, by the Developers, into the nature and extent of the work that will probably be required to complete something. They may conduct a spike investigation to help them determine feasibility, or to estimate how much time, complexity, and effort is likely to be involved. As such, a spike ought to be seen as a Product Backlog refinement activity. It isn't something that would or could be estimated at all, but will be allowed for in the time a Scrum Team reserves for refinement activities. A spike might reasonably be conducted as a time-boxed activity.
+Does BA or UX work go on the backlog?    
+Whether or not certain work goes on a Product Backlog depends upon the Product Owner's ability to account for its value to stakeholders, and to meaningfully order that work in relation to existing Product Backlog items. The work a Business Analyst or User Experience specialist performs may not be of such clear value, but it may well enable other demonstrably valuable pieces of work to be completed. As such, BA and UX work might not necessarily be accounted for and managed on a Product Backlog. Instead, it might be something the Developers would undertake as part of their Definition of Done, or to ensure that work is refined and made ready for Sprint Planning.
+Should we track the Product Owner’s tasks in issue tracking software (Jira, GitHub, etc.)?   
+ If the Product Owner is also a developer, then it would be reasonable for the Developers to collectively monitor that work. He or she would then share in the Developers' commitments to create Done Increments that meet a Sprint Goal. The Developers should establish transparency over their commitments, and to inspect and adapt the work they do to meet them.
+How do we write technical stories in issue tracking software ?    
+The Product Backlog should tell the truth about the work currently believed to remain for the Product over its lifetime. If technical work can be meaningfully ordered and organized as separate Product Backlog items, then it need not tell a story at all. On the other hand if there is no valuable "story" to tell, then a Product Owner might not be expected to manage it as discrete items on the Product Backlog. Despite this reduced transparency, it would still be up to the Developers to ensure that the work is undertaken and that technical debt is kept under control. They may incorporate it into the Definition of Done for the Increment, and reflect the time, effort, and complexity needed to complete it in their estimates of other future work.
+What do I do if a Developer is underperforming?    
+The Developers are collectively accountable for the work that they do, and for meeting their joint Sprint Goal commitment. Notice that the role is Developers (plural) and not Developer. This means that if there is any policing to be done, the Developers must police themselves. The best thing is to establish transparency over the situation, so a consensus view of reality is achieved, and to assume good intent. The Sprint Retrospective presents a formal opportunity each Sprint for the Scrum Team to inspect and adapt its way-of-working, and to identify meaningful improvements. Ultimately, a team should be able to decide who becomes or remains a member, and when.
+How do I manage the Daily Scrum?    
+The Daily Scrum is a formal opportunity for the Developers to stand aside from their work, for a maximum of 15 minutes, and to come up with a plan for the next working day. Only the Developers need to be there: anyone else should be trying to make themselves redundant from this event. The Developers should decide for themselves how best to manage their Daily Scrum. They may "walk the board" for example, reading it from right to left, challenging impeded work and prioritizing completion before starting anything new. If they wish they may take it in tums to faciliate, or choose one amongst their number. Ideally, the right person to facilitate something is the first one who sees that it needs doing.
+How do we use stretch goals?    
+Scrum is a commitment based framework. As such, a goal must a realistic and achievable commitment, not a stretch. Commitments are either met or they aren't. Sufficient contingency ought therefore to be planned into each Sprint to allow commitments to be met. Contingency is found in scope: not all of the work planned into a Sprint Backlog may be essential for meeting a Sprint Goal. If a Sprint Goal is met too easily, an opportunity is presented for the Developers to rethink their capacity, and to be more ambitious when making future commitments.
+Do I need to understand the product as a Scrum Master?    
+It would be better for a Scrum Master to understand people, since that is where most of the risk and uncertainty lies when building complex products. The Product Owner is accountable for ensuring that other team members understand the Product well enough to deliver value, while the Developers are accountable for ensuring the work is Done to a usable level of quality.  The Scrum Master should understand enough about a Product to facilitate progress so these accountabilities are met.
+How do I become a Scrum Master with no experience?    
+Think about the servant leadership you can provide and exemplify to others right now. A Scrum Master may adopt different stances at different times. These stances include being a coach, a teacher, a facilitator, and a guiding light about what the Scrum Framework really means. Remember the problems you have helped people to overcome, including those occasions when you were invisibly present, and regardless of whether or not you were thought of as a Scrum Master at all.
+How do we allow for client testing?    
+Anyone whose labor and industry is needed to ensure that each Increment is of usable quality is a Developer, and therefore a member of the Scrum Team. If clients are doing testing, then they are Developers whether they realize it or not. This is the truth which is being exposed, and the Increment will not be Done until they have finished their work. The Developers must plan to complete at least one Done Increment each and every Sprint.
+Who fixes broken tests?    
+The best way to inspect and adapt is as closely as possible to the time and place of work being carried out. If the quality of the Increment becomes compromised, the right developer to provide remedy should the first who recognizes the problem, which ought to be whoever made the offending change.
+We have no Product Owner. What do we do?   
+ Find out who is accountable for the value of any work currently being undertaken. This might involve following project money or operational expenditure, for example, and it may lead to people who do not yet appreciate the Product Ownership role. A Product Owner can delegate their responsibilities -- the doing of their job -- to somebody else if they agree. However, the Product Owner would remain accountable for outcomes regarding Product value.
+How do we do PI Planning?    
+Make sure that a Done, finished Increment of immediately usable quality is produced each and every Sprint. This must include all necessary integration and testing across all impacted products. The empirical feedback obtained from the usage of finished increments informs future planning activities, with multiple opportunities to inspect and adapt. It's important to reduce the leap-of-faith taken before planned outcomes are actually obtained.
+Should a Scrum Master be technical?   
+A Scrum Master should be technical enough to be assured that if the Developers were to follow their Sprint plan, at least one Done Increment of immediately usable quality would be produced, and the Sprint Goal would be met. A Scrum Master would not do any of the work themselves unless he or she is also one of the Developers.
+How do we stop stakeholders from adding tickets to issue tracking software?    
+A Product Owner can delegate the authoring of Product Backlog items to others, including stakeholders, if they are amenable. Accountability for the state of the Product Backlog nevertheless rests with the Product Owner. If the Product Owner does not wish for others to modify the Product Backlog, then he or she ought to secure it against unwarranted change. The Scrum Master may also educate stakeholders about which behaviors are helpful and which are unhelpful.
+How do we plan with the test team?    
+Anyone whose labor and industry is needed to ensure that each Increment is of usable quality is a Developer, and therefore a member of the Scrum Team. Testers are Developers whether they realize it or not. This is the truth which is being exposed, and the Increment will not be Done until they have finished their work. The Developers must plan to complete at least one Done Increment each and every Sprint.
+Can we change scope in the middle of a Sprint?    
+Yes. No backlog is ever fixed. The work on a Product Backlog enables discussions about valuable Sprint Goals which ought to be met. The items on a Sprint Backlog are a forecast of the work needed to meet a Sprint Goal.
+How do we estimate bugs?    
+If a defect is identified in work being done this Sprint, then it does not need to be estimated. The fixing of the defect just represents work in progress, and the Developers ought to replan their work accordingly. It may be necessary to revise other work in the Sprint Backlog so the Sprint Goal is not put at risk. If a defect is identified in work that was undertaken in previous Sprints, then it may be estimated and accounted for in the same way as any other Product Backlog item. Whenever defects of any kind arise at any point, the Developers ought to challenge and improve their Definition of Done, so issues do not recur and better quality is assured in the future.
+How do we decide the story points?    
+Here's one way to do relative estimation. Put up six headings: 1, 2, 3, 5, 8, 13, 20. Choose any one item randomly from the Product Backlog. Call it a 5. Take another and decide if it is the same time, effort, and complexity, or more or less and if so by how much. Then do the same for the next item and so on. Eventually a bell curve will emerge, the deepest part of which represents the median. Recalibrate the headings if necessary so the median now lies at 5.
+Can we fix bugs in a Sprint?   
+If a defect is identified in work being done this Sprint, then it represents ongoing work in progress, and it must be fixed. If a defect is identified in work that was undertaken in previous Sprints, then it may be remedied this Sprint if doing so does not put the Sprint Goal at risk. Whenever defects of any kind arise at any point, the Developers ought to challenge and improve their Definition of Done, so issues do not recur and better quality is assured in the future.
+Can the Scrum Master and Product Owner also be Developers?    
+Yes. There is no prescription against someone holding multiple accountabilities in Scrum. However, this does not mean that it is always reasonable for someone to do so. Each situation must be considered in context and on its own merits, taking into account the time available, requisite skills, any potential conflict of interest, and other factors.
+What do we do if not all of our Sprint Goals are met?    
+Each Sprint must have exactly one Sprint Goal. It is a commitment that makes the work in the Sprint Backlog coherent, and more than just the sum of its parts. The Sprint Goal gives the Developers a reason to work together this Sprint, rather than on separate initiatives. and mitigates a significant risk or uncertainty in a complex challenge.
+Do we need to finish all our stories in a Sprint?    
+It's important to commit to a goal and not to a forecast of work. A Sprint Backlog is a forecast of the work the Developers believe they need to do in order to meet their Sprint Goal commitment. That work can be inspected and adapted at any time, and will be revised throughout the Sprint so the Sprint Goal might be better achieved. Some, all, or none of the work originally planned may be completed, but the Sprint Goal must remain intact and be satisfied.
